@@ -1,0 +1,127 @@
+.auth {
+    display: grid;
+    align-items: stretch;
+}
+
+.auth-container {
+    justify-content: stretch;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 3em;
+    margin: 10%;
+    border-radius: 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+    /* transition: all 0.5s ease; */
+  }
+
+  .auth-tag {
+    display: block;
+    grid-area: tag;
+  }
+  .auth-name {
+    display: block;
+    grid-area: name;
+  }
+  .auth-surname {
+    display: block;
+    grid-area: surname;
+  }
+  .auth-mail {
+    display: block;
+    grid-area: email;
+  }
+  .auth-tel {
+    display: block;
+    grid-area: phone;
+  }
+  .auth-message {
+    display: block;
+    grid-area: message;
+  }
+  .auth-btn {
+    display: block;
+    grid-area: btn;
+  }
+
+  .auth-container p {
+    font-weight: 500;
+    color: #fff;
+    opacity: 0.7;
+    font-size: 1.4rem;
+    margin-top: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .auth-container a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 12px;
+  }
+
+  .auth-container a:hover {
+    text-shadow: 2px 2px 6px #00000040;
+  }
+  
+  .auth-container a:active {
+    text-shadow: none;
+  }
+
+  .auth-container input {
+    background: transparent;
+    padding: 1em;
+    margin-bottom: 2em;
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5000px;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  .auth-container input:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+  }
+  .auth-container input[type=email]:focus, form input[type=password]:focus {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+  }
+  .auth-container input[type=button] {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  .auth-container input[type=button]:hover {
+    cursor: pointer;
+  }
+  .auth-container input[type=button]:active {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  ::-moz-placeholder {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  :-ms-input-placeholder {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  ::placeholder {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }

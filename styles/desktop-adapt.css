@@ -1,0 +1,16 @@
+@media (min-width: 1001px) {
+    .footer-wrapper {
+        display: grid;
+        grid-template-columns: 40% 20% 20% 20%;
+    }
+    .auth-container {
+        display: grid;
+        grid-template-areas:
+            "tag tag" 
+            "name surname"
+            "email phone"
+            "message message"
+            "btn btn";
+    }
+    
+}

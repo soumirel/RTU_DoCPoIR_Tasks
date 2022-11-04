@@ -1,0 +1,28 @@
+@media (min-width: 320px) and (max-width: 768px) {
+    .body-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "info"
+        "main"
+        "sidebar"
+        "ads"
+        "footer";
+    }
+
+    .footer-wrapper {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .auth-container {
+        grid-template-areas:
+            "tag" 
+            "name"
+            "surname"
+            "email"
+            "phone"
+            "message"
+            "btn";
+    }
+}
