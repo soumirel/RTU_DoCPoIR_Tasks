@@ -1,7 +1,16 @@
+img {
+    border-radius: 15px;
+}
+
+aside img {
+    width: 100%;
+    height: auto;
+
+}
+
 .img-container {
     overflow: hidden;
 }
-
 
 .img-overflow {
     overflow: hidden;
@@ -31,6 +40,3 @@
 .img-overflow:hover::before {
     left: 0;
 }
-
-
-

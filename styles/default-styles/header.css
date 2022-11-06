@@ -1,0 +1,77 @@
+@import "../styles/burger-menu.css";
+
+header {
+    position: sticky;
+    top: 0px;
+    
+    width: 100%;
+    height: 90px;
+    z-index: 1;
+
+    display: grid;
+    align-items: center;
+    grid-template-areas: 
+        "logo name navigation";
+    grid-template-columns: 20% 1fr 1fr;
+
+    background-color:#323232;
+    box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+header .logo {
+    grid-area: logo;
+    position: relative;
+    left: 40px;
+    justify-self: left;
+}
+
+header .site-name {
+    grid-area: name;
+    position: relative;
+    left: 3vh;
+    justify-self: left;
+}
+
+header nav {
+    grid-area: navigation;
+    display: flex;
+    margin-left: auto;
+    width: fit-content;
+    justify-content: space-around;
+}
+
+.icon {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-left: 12px;
+    margin-right: 12px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.icon::before,
+.icon::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.25s ease;
+    border-radius: 30px;
+    }
+    .icon img {
+    position: relative;
+    color: #FFFFFF;
+    margin: 15px;
+}
+
+header .icon-fill::before {
+    transition-duration: 0.5s;
+    box-shadow: inset 0 0 0 1px #111111;
+}
+header .icon-fill:hover::before {
+    box-shadow: inset 0 0 0 60px #111111;
+}

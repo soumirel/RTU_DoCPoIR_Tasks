@@ -1,22 +1,6 @@
 
-@media (min-width:844px) {
-    .menu-btn {
-        visibility: hidden;
-    }
-
-    .nav-list {
-        visibility: visible;
-    }
-}
-
-@media (max-width:844px) {
-    .menu-btn {
-        visibility: visible;
-    }
-
-    .nav-list {
-        visibility: hidden;
-    }
+header .burger-menu {
+    grid-area: navigation;
 }
 
 #menu-toggle {
@@ -58,7 +42,6 @@
 .menu-box {
     display: block;
     position: fixed;
-    visibility: hidden;
     top: 0;
     right: -100%;
     width: 300px;
@@ -105,12 +88,6 @@
 #menu-toggle:checked ~ .menu-box {
     visibility: visible;
     right: 0;
-}
-
-.menu-btn > span,
-.menu-btn > span::before,
-.menu-btn > span::after {
-  /* transition-duration: .25s; */
 }
 
 .menu-box {

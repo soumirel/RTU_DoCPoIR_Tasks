@@ -1,8 +1,13 @@
 @media (min-width: 1001px) {
-    .footer-wrapper {
-        display: grid;
-        grid-template-columns: 40% 20% 20% 20%;
+
+    header nav {
+        visibility: visible;
     }
+
+    header .burger-menu {
+        visibility: hidden;
+    }
+
     .auth-container {
         display: grid;
         grid-template-areas:
@@ -12,5 +17,4 @@
             "message message"
             "btn btn";
     }
-    
 }

@@ -1,16 +1,22 @@
 @media (min-width: 769px) and (max-width: 1000px) {
 
-    .body-wrapper {
-        grid-template-areas: 
-        "header header header"
-        "info info info"
-        "sidebar . ads"
-        "sidebar main ads"
-        "footer footer footer";
+    header nav {
+        visibility: hidden;
     }
 
-    .footer-wrapper {
-        display: grid;
+    header .burger-menu {
+        visibility: visible;
+    }
+    
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "title"
+        "sidebar"
+        "main-info";
+    }
+
+    footer {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -23,6 +29,4 @@
             "message message"
             "btn btn";
     }
-
-
 }
