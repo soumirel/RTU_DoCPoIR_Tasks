@@ -1,20 +1,57 @@
-.auth {
-    display: grid;
-    align-items: stretch;
+
+:root {
+  --unconfirmed-color: #fff;
+  --confirmed-color: #f00;
 }
 
-.auth-container {
-    justify-content: stretch;
-    background: rgba(255, 255, 255, 0.3);
-    padding: 3em;
-    margin: 10%;
-    border-radius: 20px;
-    border-left: 1px solid rgba(255, 255, 255, 0.3);
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
-    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
-    /* transition: all 0.5s ease; */
+.reg-question {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 5vh;
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+}
+
+.reg-question h2 {
+  margin-bottom: 20px;
+  align-self: center;
+
+}
+
+.reg-question #submit {
+  align-self: center;
+  width: 50%;
+  background-color: white;
+}
+
+.active {
+  background-color: #f00;
+}
+
+
+.authentication {
+  display: grid;
+  grid-template-areas:
+    "tag tag" 
+    "name surname"
+    "email phone"
+    "message message"
+    "btn btn";
+  gap: 2%;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 7vh;
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+  /* transition: all 0.5s ease; */
   }
 
   .auth-tag {
@@ -55,21 +92,22 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
 
-  .auth-container a {
+  .authentication a {
     text-decoration: none;
     color: #ddd;
     font-size: 12px;
   }
 
-  .auth-container a:hover {
+  .authentication a:hover {
     text-shadow: 2px 2px 6px #00000040;
   }
   
-  .auth-container a:active {
+  .authentication a:active {
     text-shadow: none;
   }
 
-  .auth-container input {
+  .authentication input,
+  .title-box input {
     background: transparent;
     padding: 1em;
     margin-bottom: 2em;
@@ -86,22 +124,23 @@
     transition: all 0.2s ease-in-out;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
-  .auth-container input:hover {
+  .authentication input:hover,
+  .title-box input:hover {
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
   }
-  .auth-container input[type=email]:focus, form input[type=password]:focus {
+  .authentication input[type=email]:focus, form input[type=password]:focus {
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
   }
-  .auth-container input[type=button] {
+  .authentication input[type=button] {
     margin-top: 10px;
     font-size: 1rem;
   }
-  .auth-container input[type=button]:hover {
+  .authentication input[type=button]:hover {
     cursor: pointer;
   }
-  .auth-container input[type=button]:active {
+  .authentication input[type=button]:active {
     background: rgba(255, 255, 255, 0.2);
   }
   

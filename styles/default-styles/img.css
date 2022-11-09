@@ -23,8 +23,8 @@ aside img {
     align-items: flex-end;
     content: 'Intel i7 9700K и AMD Ryzen 7 5800X ';
     font-size: 22px;
-    width: 675px;
-    height: 385px;
+    width: 90%;
+    height: 100%;
     border-radius: 15px;
     color: #fff;
     background: linear-gradient(45deg, rgba(169, 34, 34, 0.441),rgba(0, 0, 0, 0.5));
@@ -39,4 +39,8 @@ aside img {
 
 .img-overflow:hover::before {
     left: 0;
+}
+
+.title-box .title-img {
+    width: 90%;
 }

@@ -1,6 +1,7 @@
 @import "../styles/default-styles/main-style.css";
 @import "../styles/default-styles/header.css";
 @import "../styles/default-styles/footer.css";
+@import "../styles/default-styles/aside.css";
 @import "../styles/default-styles/burger-menu.css";
 @import "../styles/default-styles/img.css";
 @import "../styles/default-styles/scrollbar-style.css";
@@ -12,4 +13,4 @@
 
 @import "../styles/adaptability/desktop.css";
 @import "../styles/adaptability/tablet.css";
-@import "../styles/adaptability/.css";
+@import "../styles/adaptability/portrait.css";

@@ -9,12 +9,6 @@
     }
 
     .auth-container {
-        display: grid;
-        grid-template-areas:
-            "tag tag" 
-            "name surname"
-            "email phone"
-            "message message"
-            "btn btn";
+        
     }
 }

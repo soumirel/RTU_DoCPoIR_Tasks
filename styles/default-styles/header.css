@@ -6,13 +6,13 @@ header {
     
     width: 100%;
     height: 90px;
-    z-index: 1;
+    z-index: 2;
 
     display: grid;
     align-items: center;
     grid-template-areas: 
         "logo name navigation";
-    grid-template-columns: 20% 1fr 1fr;
+    grid-template-columns: 7% 1fr 1fr;
 
     background-color:#323232;
     box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
@@ -20,15 +20,12 @@ header {
 
 header .logo {
     grid-area: logo;
-    position: relative;
-    left: 40px;
+    margin-left: 20px;
     justify-self: left;
 }
 
 header .site-name {
     grid-area: name;
-    position: relative;
-    left: 3vh;
     justify-self: left;
 }
 

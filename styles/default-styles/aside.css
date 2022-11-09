@@ -1,0 +1,24 @@
+aside {
+    grid-area: sidebar;
+    background: rgba(71, 71, 71, 0.37);
+    padding: 30px;
+}
+
+aside .aside-title {
+    text-align: center;
+}
+
+aside nav {
+    position: sticky;
+    top: 100px;
+}
+
+aside nav ul {
+    list-style-type: none;
+}
+
+aside nav li {
+    margin-top: 10px;
+    background-color: rgb(79, 79, 79);
+    text-align: center;
+}
