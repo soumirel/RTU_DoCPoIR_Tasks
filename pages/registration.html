@@ -57,6 +57,21 @@
             
         </header>
 
+        <div class="captcha">
+            <div class="blur"></div>
+
+            <div class="captcha-container">
+                <p class="captcha-title">
+                    Для продолжения введите каптчу:
+                </p>
+                <div class="captcha-content"></div>
+                <input class="captcha-input" type="text" placeholder="Имя">
+                <input class="captcha-confirm-btn" type="button" value="Подтвердить">
+                <img class="close-cross" src="../images/cross-90x90.png">
+            </div>
+
+        </div>
+
         <main>
 
             <aside>
@@ -65,13 +80,6 @@
                 </h2>
             </aside>
 
-            <article class="title-box"> 
-                <section class="reg-question">
-                    <h2>Желаете пройти регистрацию на сайте?</h2>
-                    <button class="btn-reg">Да!</button>
-                </section>
-            </article>
-
             <article class="main-content">
                 <form class="authentication">
                     <p class="auth-tag">Авторизация</p>
@@ -79,7 +87,6 @@
                     <input class="auth-surname" type="text" placeholder="Фамилия">
                     <input class="auth-mail" type="email" placeholder="Эл. почта">
                     <input class="auth-tel" type="tel" placeholder="Телефон">
-                    <input class="auth-message" type="text" placeholder="Сообщение">
                     <input class="auth-btn" type="button" value="Регистрация">
                 </form>
             </artucle>
@@ -160,9 +167,7 @@
             </div>
         </footer>
     </div>
-
-    <script src="../scripts/questions.js"></script>
-    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
-    <script src="../scripts/coloredButton.js"></script>
+    
+    <script src="../scripts/captcha.js"></script>
 </body>
 </html>

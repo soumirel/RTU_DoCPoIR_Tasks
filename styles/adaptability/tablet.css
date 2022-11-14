@@ -9,11 +9,13 @@
     }
     
     main {
+        width: 90%;
+        
         grid-template-columns: 1fr;
         grid-template-areas: 
         "title"
         "sidebar"
-        "main-info";
+        "main";
     }
 
     footer {
