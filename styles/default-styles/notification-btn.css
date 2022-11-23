@@ -4,34 +4,34 @@
     position:fixed;
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
     top: 89%;
     left: 94%;
     width: 60px;
     height: 60px;
     border-radius: 100%;
     background-color: #323232;
-    transform: translateY(5px);
     box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
     z-index: 1;
-    transition: 0.5s;
+    transform: translateY(5px);
+    transition: all 0.5s;
 }
 
 .notification-btn img {
     margin: 23%;
 }
 
-.notification-btn-content {
+.notification-btn-info {
     width: 100px;
     display: flex;
     flex-wrap: nowrap;
 }
 
-.notification-btn:hover {
-    animation: circle-to-rectangle 0.5s ease forwards;
-
+.notification-btn .notification-btn-content {
+    text-align: center;
 }
 
-.notification-btn-content .notification-btn-badge {
+.notification-btn-info .notification-btn-badge {
     position: absolute;
     top: -10px;
     right: -10px;
@@ -72,11 +72,11 @@ a:visited {
 }
 
 .notification-btn:hover ul {
-    animation: ul-margine 1s ease forwards;
+    animation: ul-animation 1s ease forwards;
     animation-delay: 0.1s;
 }
 
-@keyframes ul-margine {
+@keyframes ul-animation {
     0% {
         opacity: 0;
     }
@@ -87,7 +87,11 @@ a:visited {
     }
 }
 
-@keyframes circle-to-rectangle {
+.notification-btn-open-animation {
+    animation: 0.5s animate-open-ntfctn-menu ease forwards;
+}
+
+@keyframes animate-open-ntfctn-menu {
     to {
         top: 59%;
         left: 86%;

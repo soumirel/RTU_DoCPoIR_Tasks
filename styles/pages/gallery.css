@@ -150,10 +150,20 @@
 
 .container .box .content a:hover
 {
-  background: linear-gradient(45deg, rgba(134, 131, 218, 0.441),rgba(108, 155, 226, 0.5));
-  border: 1px solid rgba(129, 112, 236, 0.4);
   box-shadow: 0 10px 15px rgba(1, 1, 1, 0.2);
   color: #ffff;
+}
+
+.container .intel .content a:hover
+{
+  background: linear-gradient(45deg, rgba(134, 131, 218, 0.441),rgba(108, 155, 226, 0.5));
+  border: 1px solid rgba(129, 112, 236, 0.4);
+}
+
+.container .amd .content a:hover
+{
+  background: linear-gradient(45deg, rgba(220, 188, 103, 0.441),rgba(239, 150, 99, 0.5));
+  border: 1px solid rgba(236, 147, 112, 0.4);
 }
 
 
@@ -178,7 +188,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
   .glassIco:before {
     content: "";

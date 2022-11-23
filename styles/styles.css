@@ -5,9 +5,10 @@
 @import "../styles/default-styles/burger-menu.css";
 @import "../styles/default-styles/img.css";
 @import "../styles/default-styles/scrollbar-style.css";
-
+@import "../styles/default-styles/notification-btn.css";
 
 @import "../styles/pages/gallery.css";
+@import "../styles/pages/gallery-aside.css";
 @import "../styles/pages/lection.css";
 @import "../styles/pages/registration.css";
 

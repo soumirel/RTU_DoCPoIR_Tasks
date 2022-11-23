@@ -1,0 +1,58 @@
+main {
+    grid-template-columns: 22% 70%;
+}
+
+.cart-container,
+.filter-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.expand-btn {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.down-arrow {
+    width: 15px;
+    height: auto;
+    transition: all 0.5s;
+}
+
+.rotated-arrow {
+    transform: rotate(90deg);
+}
+
+.cart-content,
+.filter-content {
+    display: none;
+}
+
+.cart-good {
+    border-radius: 20px;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(0deg, #616161 0% 75%, #464646 75%);
+    grid-template-columns: 18% 70%;
+    grid-template-areas: 
+        "name name name name"
+        "space space space space"
+        "final-price space space space"
+        "plus minus space remove"
+
+}
+
+.intel-good {
+    background: linear-gradient(0deg, #616161 0% 75%, #4749b7 75%);
+    display: flex;
+}
+
+.amd-good {
+    background: linear-gradient(0deg, #616161 0% 75%, #e28a2c 75%);
+    display: flex;
+}

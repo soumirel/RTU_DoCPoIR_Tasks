@@ -54,15 +54,47 @@
             </div>
             
         </header>
+        <div class="notification-btn-box">
+            <div class="notification-btn">
+                <div class="notification-btn-info">
+                    <img src="../icons/free-icon-email-4505311.png">
+                    <span class="notification-btn-badge"></span>
+                </div>
+                <ul class="notification-btn-content">
+                </ul>
+            </div>
+        </div>
 
         <main>
-            <aside>
-                <img src="../images/processor_1100x435.png">       
-                
+            <aside style="padding-top: 10px;">    
                 <nav>
-                    <h3 class="aside-title">
-                        Быстрое перемещение по странице:
-                    </h3>
+                    <div class="cart-container">
+                        <div class="expand-btn" id="cart-expand">
+                            <img class="down-arrow" id="cart-arrow" src="../icons/icon-down.png">
+                            <h3 class="aside-title">
+                                Корзина
+                            </h3>
+                        </div>
+                        <div class="cart-content">
+                            <div class="cart-good">
+                                <p>Name</p>
+                            </div>
+                            <div> </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-container">
+                        <div class="expand-btn" id="filters-expand">
+                            <img class="down-arrow" id="filters-arrow" src="../icons/icon-down.png">
+                            <h3 class="aside-title">
+                                Фильтры
+                            </h3>
+                        </div>
+                        
+                        <div class="filter-content">
+                            123
+                        </div>
+                    </div>
                 </nav>
             </aside>
 
@@ -75,9 +107,16 @@
                             <h2>Intel Core i9</h2>
                             <img src="../images/gallery/core_i9_13.png">
                             <span class="card-text">
+                                <div class="box-name">
                                     Intel® Core™ i9-13900K
+                                </div> 
+                                <div class="box-description">
                                     36M Cache, up to 5.80 GHz
+                                </div> 
                             </span>
+                            <div class="price">
+                                700$
+                            </div>
                             <a class="glassIco add-to-cart-btn" href="#">Купить</a>
                         </div>
                     </div>
@@ -87,9 +126,16 @@
                             <h2>Intel Core i9</h2>
                             <img src="../images/gallery/core_i9_11.png">
                             <span class="card-text">
-                                Intel® Core™ i9-11900K <br>
-                                16M Cache, up to 5.30 GHz
+                                <div class="box-name">
+                                    Intel® Core™ i9-11900K
+                                </div> 
+                                <div class="box-description">
+                                    16M Cache, up to 5.30 GHz
+                                </div> 
                             </span>
+                            <div class="price">
+                                600$
+                            </div>
                             <a class="glassIco add-to-cart-btn" href="#">Купить</a>
                         </div>
                     </div>
@@ -99,9 +145,16 @@
                             <h2>Intel Core i3</h2>
                             <img src="../images/gallery/core_i3_11.png">
                             <span class="card-text">
-                                Intel® Core™ i3-12300 <br>
-                                12M Cache, up to 4.40 GHz
+                                <div class="box-name">
+                                    Intel® Core™ i3-12300
+                                </div> 
+                                <div class="box-description">
+                                    12M Cache, up to 4.40 GHz
+                                </div> 
                             </span>
+                            <div class="price">
+                                500$
+                            </div>
                             <a class="glassIco add-to-cart-btn" href="#">Купить</a>
                         </div>
                     </div>
@@ -110,34 +163,55 @@
                         <div class="content">
                             <h2>AMD Ryzen 9</h2>
                             <img src="../images/gallery/amd_r9_7.png">
-                            <span class="card-text"> 
-                                AMD Ryzen 9 7950X <br>
-                                16 Cores - 4500 MHz - 170 watts
+                            <span class="card-text">
+                                <div class="box-name">
+                                    AMD Ryzen 9 7950X
+                                </div> 
+                                <div class="box-description">
+                                    16 Cores - 4500 MHz - 170 watts
+                                </div> 
                             </span>
+                            <div class="price">
+                                400$
+                            </div>
                             <a class="glassIco add-to-cart-btn" href="#">Купить</a>
                         </div>
                     </div>
 
                     <div class="box amd">
                         <div class="content">
-                            <h2>Intel Core i9</h2>
+                            <h2>AMD Ryzen 9</h2>
                             <img src="../images/gallery/amd_r9_5.png">
                             <span class="card-text">
-                                AMD Ryzen™ 9 5900X <br>
-                                12 Cores - 3700 MHz - 105 watts
+                                <div class="box-name">
+                                    AMD Ryzen™ 9 5900X
+                                </div> 
+                                <div class="box-description">
+                                    12 Cores - 3700 MHz - 105 watts
+                                </div> 
                             </span>
+                            <div class="price">
+                                300$
+                            </div>
                             <a class="glassIco add-to-cart-btn" href="#">Купить</a>
                         </div>
                     </div>
 
                     <div class="box amd">
                         <div class="content">
-                            <h2>Intel Core i9</h2>
+                            <h2>AMD Ryzen 7</h2>
                             <img src="../images/gallery/amd_r7_7.png">
                             <span class="card-text">
-                                AMD Ryzen 7 7700X <br>
-                                8 Cores - 4500 MHz - 105 watts
+                                <div class="box-name">
+                                    AMD Ryzen 7 7700X
+                                </div> 
+                                <div class="box-description">
+                                    8 Cores - 4500 MHz - 105 watts
+                                </div> 
                             </span>
+                            <div class="price">
+                                200$
+                            </div>
                             <a class="glassIco add-to-cart-btn" href="#">Купить</a>
                         </div>
                     </div>
@@ -225,7 +299,7 @@
             </div>
         </footer>
     </div>
-    <script src="../scripts/gallery_naming.js"></script>
     <script src="../scripts/cart.js"></script>
+    <script src="../scripts/notificationButton.js"></script>
 </body>
 </html>
