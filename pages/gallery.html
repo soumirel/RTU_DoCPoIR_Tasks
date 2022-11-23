@@ -16,7 +16,7 @@
 
         <header>
             
-            <a class="logo" href="#">
+            <a class="logo" >
                 <img src="../icons/cpu.png" height="60" width="auto">
             </a>
 
@@ -75,11 +75,24 @@
                                 Корзина
                             </h3>
                         </div>
+
                         <div class="cart-content">
-                            <div class="cart-good">
-                                <p>Name</p>
+                            <div class="cart-good hidden-cart-good">
+                                <div class="good-name">Name</div>
+                                <div class="good-price">100$</div>
+                                <div class="goods-amount">x5</div>
+                                <div class="good-equals">=</div>
+                                <div class="total-good-price">500$</div>
+                                <div class="cart-plus-btn">
+                                    <img src="../icons/plus.png">
+                                </div>
+                                <div class="cart-minus-btn">
+                                    <img src="../icons/minus.png">
+                                </div>
+                                <div class="cart-bin-btn">
+                                    <img src="../icons/trash.png">
+                                </div>
                             </div>
-                            <div> </div>
                         </div>
                     </div>
 
@@ -92,7 +105,27 @@
                         </div>
                         
                         <div class="filter-content">
-                            123
+                            <div class="filter">
+                                <span class="sort-btn">
+                                    Сортировать
+                                </span>
+
+                                <span>Отсортировать по цене:</span>
+				                <div>   
+					                <div>
+                                        <number>0</number>
+                                        <number>1000</number>
+                                    </div>
+                                    <div id="rating" class="slider">
+						                <div class="block-min" onMouseDown="moveRange(this);" onTouchStart="moveRange(this);"></div>
+						                <div class="color-range"></div>
+						                <div class="block-max" onMouseDown="moveRange(this)" onTouchStart="moveRange(this);" ></div>
+                                    </div>
+                                </div>
+                                <span class="submit-filter-btn">
+                                    Поиск
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </nav>
@@ -115,9 +148,9 @@
                                 </div> 
                             </span>
                             <div class="price">
-                                700$
+                                400$
                             </div>
-                            <a class="glassIco add-to-cart-btn" href="#">Купить</a>
+                            <a class="glassIco add-to-cart-btn" >Купить</a>
                         </div>
                     </div>
 
@@ -134,9 +167,9 @@
                                 </div> 
                             </span>
                             <div class="price">
-                                600$
+                                550$
                             </div>
-                            <a class="glassIco add-to-cart-btn" href="#">Купить</a>
+                            <a class="glassIco add-to-cart-btn" >Купить</a>
                         </div>
                     </div>
 
@@ -153,9 +186,9 @@
                                 </div> 
                             </span>
                             <div class="price">
-                                500$
+                                100$
                             </div>
-                            <a class="glassIco add-to-cart-btn" href="#">Купить</a>
+                            <a class="glassIco add-to-cart-btn" >Купить</a>
                         </div>
                     </div>
 
@@ -172,9 +205,9 @@
                                 </div> 
                             </span>
                             <div class="price">
-                                400$
+                                800$
                             </div>
-                            <a class="glassIco add-to-cart-btn" href="#">Купить</a>
+                            <a class="glassIco add-to-cart-btn" >Купить</a>
                         </div>
                     </div>
 
@@ -193,7 +226,7 @@
                             <div class="price">
                                 300$
                             </div>
-                            <a class="glassIco add-to-cart-btn" href="#">Купить</a>
+                            <a class="glassIco add-to-cart-btn" >Купить</a>
                         </div>
                     </div>
 
@@ -210,9 +243,9 @@
                                 </div> 
                             </span>
                             <div class="price">
-                                200$
+                                240$
                             </div>
-                            <a class="glassIco add-to-cart-btn" href="#">Купить</a>
+                            <a class="glassIco add-to-cart-btn" >Купить</a>
                         </div>
                     </div>
 
@@ -261,12 +294,12 @@
             <h2>Quick links</h2>
             <nav>
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a >About</a></li>
+                    <li><a >FAQ</a></li>
+                    <li><a >Privacy Policy</a></li>
+                    <li><a >Help</a></li>
+                    <li><a >Terms & Conditions</a></li>
+                    <li><a >Contacts</a></li>
                 </ul>
             </nav>
             </div>
@@ -275,9 +308,9 @@
             <h2>Shop</h2>
             <nav>
                 <ul>
-                    <li><a href="#">Processors</a></li>
-                    <li><a href="#">Coolers</a></li>
-                    <li><a href="#">Thermal paste</a></li>
+                    <li><a >Processors</a></li>
+                    <li><a >Coolers</a></li>
+                    <li><a >Thermal paste</a></li>
                 </ul>
             </nav>
             </div>
@@ -300,6 +333,8 @@
         </footer>
     </div>
     <script src="../scripts/cart.js"></script>
+    <script src="../scripts/filter.js"></script>
+    <script src="../scripts/sortProducts.js"></script>
     <script src="../scripts/notificationButton.js"></script>
 </body>
 </html>

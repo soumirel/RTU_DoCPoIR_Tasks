@@ -32,27 +32,168 @@ main {
 .filter-content {
     display: none;
 }
+.cart-content img,
+.filter-content img {
+    border-radius: 0;
+}
 
 .cart-good {
     border-radius: 20px;
     width: 100%;
     height: 100px;
-    background: linear-gradient(0deg, #616161 0% 75%, #464646 75%);
-    grid-template-columns: 18% 70%;
-    grid-template-areas: 
+    background: linear-gradient(0deg, #616161 0% 70%, #464646 70%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
         "name name name name"
         "space space space space"
-        "final-price space space space"
-        "plus minus space remove"
+        "price amount equals totalprice"
+        "plus minus space2 bin";
+    align-items: center;
+    justify-items: center;
+}
 
+.cart-plus-btn,
+.cart-minus-btn,
+.cart-bin-btn {
+    width: 20px;
+    height: auto;
+}
+
+.good-name {
+    grid-area: name;
+    margin-left: 0px;
+}
+
+.good-price {
+    grid-area: price;
+    margin-left: 0px;
+}
+
+.goods-amount {
+    grid-area: amount;
+    margin-left: 0px;
+}
+
+.good-equals {
+    grid-area: equals;
+    margin-left: 0px;
+}
+
+.total-good-price {
+    grid-area: totalprice;
+    margin-left: 0px;
+}
+
+.cart-plus-btn {
+    grid-area: plus;
+}
+
+.cart-minus-btn {
+    justify-self: start;
+    grid-area: minus;
+}
+
+.hidden-cart-good {
+    display: none;
+}
+
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.cart-bin-btn {
+    width: 16px;
+    grid-area: bin;
 }
 
 .intel-good {
-    background: linear-gradient(0deg, #616161 0% 75%, #4749b7 75%);
-    display: flex;
+    background: linear-gradient(0deg, #616161 0% 70%, #4749b7 70%);
 }
 
 .amd-good {
-    background: linear-gradient(0deg, #616161 0% 75%, #e28a2c 75%);
+    background: linear-gradient(0deg, #616161 0% 70%, #e28a2c 70%);
+}
+
+.sort-btn {
+    text-align: center;
+    margin-top: 20px;
+    height: 50px;
+    width: 80%;
+    border-radius: 10px;
+    background: #616161;
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+
+.filter {
     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 90%;
+    padding-left: 10%;
+    
+}
+
+.filter > span { 
+    align-self: center;
+    text-align: center;
+}
+
+.filter .submit-filter-btn {
+    justify-self: center;
+    box-sizing: border-box;
+    margin-top: 20px;
+    height: 50px;
+    width: 80%;
+    border-radius: 10px;
+    background: #616161;
+    padding-top: 15px;
+}
+
+.filter > div {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter > div > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter .slider {
+    margin-top: 10px;
+    position: relative;
+    height: 6px;
+    background: rgb(42, 42, 42);
+    border: 1px solid rgb(164, 164, 164);
+    border-radius: 3px;
+}
+
+.filter .color-range {
+    position: absolute;
+    background: var(--background-range, rgb(164, 164, 164));
+    width: 95%;
+    border: none;
+    height: 6px;
+    left: 15px;
+}
+
+.filter .block-min,
+.block-max {
+    width: 15px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    top: -11.5px;
+    background: rgb(230, 230, 230);
+    border: 1px solid rgb(30, 30, 30);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.filter .block-max {
+    left: 95%;
 }
